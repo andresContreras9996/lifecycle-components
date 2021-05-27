@@ -36,7 +36,7 @@ export default class Clock extends Component {
     return (
       <div>
         <h1>Hello world!</h1>
-        <h2>It is{this.state.date.toLocaleTimeString()}</h2>
+        <h2>It is {this.state.date.toLocaleTimeString()}</h2>
         <h3>This component is updated {this.state.count} times</h3>
       </div>
     )

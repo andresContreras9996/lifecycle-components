@@ -5,7 +5,7 @@ import ErrorBoundary from './components/errorBoundary/errorBoundary.component';
 function App() {
   return (
     <div className="App">
-      <DisplayClock></DisplayClock>
+      <DisplayClock/>
       <ErrorBoundary>
         <ButtonCounter/>
       </ErrorBoundary>
