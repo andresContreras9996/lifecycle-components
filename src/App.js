@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import DisplayClock from './components/displayClock/displayClock.component';
+import ButtonCounter from './components/button-counter/button-counter.component';
+import ErrorBoundary from './components/errorBoundary/errorBoundary.component';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DisplayClock></DisplayClock>
+      <ErrorBoundary>
+        <ButtonCounter/>
+      </ErrorBoundary>
     </div>
   );
 }
